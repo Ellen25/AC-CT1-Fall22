@@ -51,9 +51,61 @@ h2{
 }
 
 @media (min-width:600px){
+    .scrollContainer{
+        /* scroll-snap-type: y mandatory; */
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    h1{
+        visibility: visible;
+        font-family: 'Raleway', sans-serif;
+        /* font-size: 6rem; */
+        font-size: 6rem;
+        line-height: 80%;
+        margin-top: 0;
+    }
+
+    h2{
+        visibility: hidden;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .secondContainer{
+        display: flex;
+        margin-bottom: 100px;
+        opacity: 1;
+    }
+
+    #songList{
+        position: relative;
+        opacity: 1;
+        width: 300px;
+        padding:0;
+        margin-top:0;
+        margin-left: 0;
+        /* border: 1px black solid; */
+        /* opacity: 0; */
+    }
+
+    #covers{
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 0;
+        /* opacity: 0; */
+    }
+}
+
+@media (min-width:900px){
     /* scroll */
     .scrollContainer{
-        scroll-snap-type: y mandatory;
+        /* scroll-snap-type: y mandatory; */
+        display: flex;
+        flex-direction: column;
     }
 
     /* sentence */
@@ -110,9 +162,16 @@ h2{
     }
 
     .secondContainer:hover{
+        visibility: visible;
         opacity: 1;
         transition: 0.5s 0.5s;
     }
+
+    #covers:hover{
+        visibility: visible;
+    }
+
+
 }
 
 /* .secondItem{
