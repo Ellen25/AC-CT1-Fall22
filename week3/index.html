@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Doing Things</title>
+    <style>
+        main{
+            height: 100vh; 
+            /* vh = viewport height */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="colorBtn">Click Me!</button>
+    </header>
+    <main id="mainElem"></main>
+
+    <script>
+        let clrBtn = document.getElementById("colorBtn");
+        const mnElements = document.getElementById("mainElem");
+
+        clrBtn.addEventListener("click", ()=>{
+            let red = Math.random()*255;
+            let green = Math.random()*255;
+            let blue = Math.random()*255;
+            mnElements.style.backgroundColor = "rgb("+ red +","+ green +","+ blue+")";
+        })
+    </script>
+</body>
+</html>
