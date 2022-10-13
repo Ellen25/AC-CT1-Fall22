@@ -17,7 +17,7 @@ function setup() {
   
   flowfield = new Array();
   
-  for(var i = 0; i < 1500; i++){
+  for(var i = 0; i < 1000; i++){
     particles[i] = new Particle();
   }
 }
@@ -43,10 +43,11 @@ function draw() {
       // line(0, 0, scl, 0);
       // pop();//for every vector, translate to the spot, draw a line, rotate according to th heading (the angle)
       
-      
+    //   inc += 0.1; //for detailed patterns
+
     }
     yoff += inc; //each pixel have close relationship with the one between them
-    zoff += 0.0004;
+    zoff += 0.00004;
   }
   
   for (let i = 0; i < particles.length; i++){
@@ -56,12 +57,12 @@ function draw() {
     particles[i].edges();
     particles[i].show();
   }
-   for (let i = particles.length - 1; i >= 0; i--){
-    let p = particles[i];
-    if (p.isDone == true){
-      particles.splice(i, 1);
-    }
-  }
+//    for (let i = particles.length - 1; i >= 0; i--){
+//     let p = particles[i];
+//     if (p.isDone == true){
+//       particles.splice(i, 1);
+//     }
+//   }
   
   // fr.html(floor(frameRate()));
   
@@ -75,7 +76,7 @@ function Particle(){
   this.pos = createVector(random(width), random(height));
   this.vel = createVector(0,0);
   this.acc = createVector(0,0);
-  this.maxspeed = 1.6;
+  this.maxspeed = 1.2;
   this.isDone = false;
   this.lifespan = 1;
   // this.lifeReduction = random(0.01, 0.02);
