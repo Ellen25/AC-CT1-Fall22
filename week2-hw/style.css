@@ -1,0 +1,205 @@
+/* reset */
+html{
+    font-size: 10px;
+    background-color: #e6eefc;
+}
+
+/* top title */
+.topContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.topItem{
+    padding: 5px;
+}
+
+#logo{
+    width: 45px;
+    padding: 10px;
+}
+
+#titleName{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75rem;
+}
+
+h1{
+    visibility: hidden;
+    font-size: 0;
+    margin: 0;
+}
+h2{
+    visibility: visible;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+#songList{
+    position: absolute;
+    width: 500px;
+}
+
+#covers{
+    position: absolute;
+    width: 400px;
+    margin-top: 150px;
+    margin-left: 175px;
+}
+
+@media (min-width:600px){
+    .scrollContainer{
+        /* scroll-snap-type: y mandatory; */
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+
+    h1{
+        visibility: visible;
+        font-family: 'Raleway', sans-serif;
+        /* font-size: 6rem; */
+        font-size: 6rem;
+        line-height: 80%;
+        margin-top: 0;
+    }
+
+    h2{
+        visibility: hidden;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .secondContainer{
+        display: flex;
+        margin-bottom: 100px;
+        opacity: 1;
+    }
+
+    #songList{
+        position: relative;
+        opacity: 1;
+        width: 300px;
+        padding:0;
+        margin-top:0;
+        margin-left: 0;
+        /* border: 1px black solid; */
+        /* opacity: 0; */
+    }
+
+    #covers{
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 0;
+        /* opacity: 0; */
+    }
+}
+
+@media (min-width:900px){
+    /* scroll */
+    .scrollContainer{
+        /* scroll-snap-type: y mandatory; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* sentence */
+    h1{
+        visibility: visible;
+        font-family: 'Raleway', sans-serif;
+        /* font-size: 6rem; */
+        font-size: 20rem;
+        line-height: 80%;
+        margin-top: 0;
+    }
+
+    h2{
+        visibility: hidden;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 
+    h2{
+        visibility: hidden;
+    } */
+
+    /* second row */
+    .secondContainer{
+        display: flex;
+        margin-bottom: 100px;
+        opacity: 0;
+        scroll-snap-align: start;
+    }
+
+    #songList{
+        position: relative;
+        width: 700px;
+        padding:0;
+        margin-top: 100px;
+        /* border: 1px black solid; */
+        /* opacity: 0; */
+    }
+
+    #covers{
+        position: relative;
+        width: 600px;
+        margin-top: 100px;
+        margin-left: 0;
+        padding: 0;
+        /* opacity: 0; */
+    }
+
+    h1:hover{
+        opacity: 0;
+        transition: 0.5s 2s;
+    }
+
+    .secondContainer:hover{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s 0.5s;
+    }
+
+    #covers:hover{
+        visibility: visible;
+    }
+
+
+}
+
+/* .secondItem{
+    opacity:0;
+} */
+
+/* h1:hover .secondContainer{
+    opacity: 1;
+    transition: 0.5s;
+} */
+
+/* h1:hover h2{
+    font-size: 500px;
+    transition: 1s;
+} */
+
+/* 
+.secondItem:hover{
+    opacity:1;
+    transition: 0.5s;
+} */
+
+/* #songList:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#covers:hover{
+    opacity:1;
+    transition:0.5s;
+} */
