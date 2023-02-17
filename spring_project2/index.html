@@ -16,73 +16,14 @@
         <!-- <a href="https://youtu.be/X7dDCUUKF3I">Musical Controller</a> -->
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/X7dDCUUKF3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         <!-- <img src="images/01.png"> -->
-        <a >PROJECT 1 DOCUMENTATION:</a>
-        <a>1. Data Collection</a>
+        <a >PROJECT 2 DOCUMENTATION:</a>
+        <a>1. Inspiration & Idea</a>
         <br>
-        <img src="two_cups.JPG">
-        <p>The data I was trying to collect was how many water I drink everyday, like a way to stimulate myself to drink more water.
-          So I used a water level sensor to detect how many water was left during a period of time </p>
-        <p>Putting a metal piece in my cup is not that acceptable for me due to the sanitary problem. So I decided to use another cup
-          as a representation.</p>
-        <p>Therefore, the data collection method (physically): everytime I drink some water, I will pour some water out of the glass 
-          to maintain the same water level with the cup I used to drink.</p>
-        <hr>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Gm90ZRxSKxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <img src="problem1_1.png">
-        <p>I tested the connection and the feasibility to collect accurate data first. 
-          The first problem was that there will always be two lines of errors occured in the Serial monitor.</p>
-        <p>I turned to Maxim and checked the documentation again, found out the power pin (digital INPUT) should be different from the analog water level 
-          sensor pin (analog OUTPUT). 
-        </p>
-        <p>So I adjusted the code as well as the esp32 connection:</p>
-        <img src="problem1_2.JPG">
-        <img src="problem1_3.png">
-        <img src="problem1_4.png">
-        <hr>
-        <img src="intervalInfo.png">
-        <p>I also changed the interval to 240000 milliseconds (4 minutes). So that the data collection is more accurate and authentic in terms of a daily habit</p>
-        <hr>
-        <a>and then I started to collect data!</a>
-        <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZjjZ_v8DtWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br>
-        <hr>
-        <a>...wait for a long long time...</a>
-        <br>
-        <hr>
-        <img src="dataCol.png">
-        <p>Here is the data I collected. I will mainly focus on the relatively latest part of the data set. 
-          The great shrink that shown in the screenshot is due to the connection error (I first miss typed the wrong 
-          pin number in Arduino) and the interval for data collecting at that time was short.
-        </p>
-        <hr>
-        <a>2. Visualization with p5.js</a>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8YEsWu-9vxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <p>I fetched 20 data points at one time and put them into 20 lines, representing different amount of water I drank 
-          in different moments.
-        </p>
-        <p>At first, the data kept being pushed into the array, which made a bunch of lines as time goes by. 
-          The visual was pretty good, since it offered some changes, but my laptop started to slow down.
-        </p>
-        <a>3. Outcome</a>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9TDtZV-5h6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <p>Therefore, I empty the array once the data was fetched to keep the array clean. Although it looked 
-          plain and dull without any changes, once the data was fetched in real-time (to say, the sensor was kept detecting and 
-          uploading data), there would be some slight changes to the dataset as well as the visual
-        </p>
-        <a href="https://editor.p5js.org/cyao3/full/sbFT2hv-R">link to my p5.js</a>
-        <iframe width="560" height="500" src="https://editor.p5js.org/cyao3/full/sbFT2hv-R"></iframe>
-
-
-
-        <hr>
-        <a>4. Reflection</a>
-        <p>It is hard to keep the data collected purely authentic and respectful enough to the fact. 
-          For instance, any slight move of either the position of the sensor or the cup can create a shift 
-          regarding the data collected. Therefore, the final outcomes in p5.js can only be a subtle and 
-          abstract representation.
-        </p>
-        <p>...</p>
+        <p>I'm constantly thinking about the definition of future past. I think the future is essentially a response to the past, and the future is essentially a transient state viewed from the perspective of the present. The concept of time can be blurred, so I hope to establish some connection with the past through the imagination of the future.</p>
+        <p>If the apocalypse does come and overthrow all existing institutions, will humanity draw inspiration from past experience and recreate a new order? How far back can such a past go? Will what we are experiencing now become a kind of past? Therefore, I believe that first of all, religion as a carrier of belief with a long history and a relatively stable group of fans can be reproduced. What about the Internet? Will this new thing, which has risen and become strong in the 21st century, remain in the memory of some people and be translated into reality?</p>
+        <p>Therefore, I want to build a new belief system with a strong belief in the Internet and the market mechanism it extends.</p>
+        <img src="insp.png">
+      
         
       
 
